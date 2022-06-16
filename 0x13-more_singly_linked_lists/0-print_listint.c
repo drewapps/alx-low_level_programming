@@ -9,14 +9,14 @@
  */
 size_t print_listint(const listint_t *h)
 {
-README.md size_t nodes = 0;
+	size_t nodes = 0;
 
-README.md while (h)
-README.md {
-README.md README.md nodes++;
-README.md README.md printf("%d\n", h->n);
-README.md README.md h = h->next;
-README.md }
+	while (h)
+	{
+		nodes++;
+		printf("%d\n", h->n);
+		h = h->next;
+	}
 
-README.md return (nodes);
+	return (nodes);
 }
